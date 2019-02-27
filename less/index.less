@@ -95,7 +95,11 @@ table{
 
 //header- jumbo picture
 header {
-  height: 500px;
+  height: 600px;
+
+  img{
+    width: 100%;
+  }
 
   #jumbotron-text{
     font-weight: Bold;
@@ -108,4 +112,74 @@ header {
   }
 }
 
+//top content- container (Smith & Jones Architects and Futuristic Designs content)
+.top-content {
+  
+  .top-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
 
+  h2 {
+    font-weight: Bold;
+    font-size: 28px;
+    color: #222222;
+    margin-top: 20px;
+  }
+
+
+  .first-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
+
+  .second-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
+}
+
+.btn() {
+  width: 20%;
+  height: 45px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  border-color: #222222;
+  border-radius: 14px;
+  font-size: 18px;
+  color: #222222;
+  text-align: center;
+  line-height: 45px;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  cursor: pointer;
+  
+  & a {
+      text-decoration: none;
+      color: #FFFFFF;
+      display: block;
+  
+  & a:visited {
+      color: #FFFFFF;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  
+  &:hover {
+      background-color: darken(#FFFFFF, 10%);
+      color: white;
+  }
+}
+}
+
+.button {
+.btn;
+}
