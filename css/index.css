@@ -134,3 +134,28 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.container .nav-bar {
+  display: flex;
+  background-color: #99A4AF;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container .nav-bar h1 {
+  font-weight: Bold;
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 5%;
+}
+.container .nav-bar .nav {
+  display: none;
+}
+.container .nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+.container .nav-bar a:hover {
+  color: #222222;
+}
+.container img {
+  margin-right: 5%;
+}
