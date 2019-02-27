@@ -159,3 +159,15 @@ table {
 .container img {
   margin-right: 5%;
 }
+header {
+  height: 500px;
+}
+header #jumbotron-text {
+  font-weight: Bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 280px;
+  left: 10%;
+}
