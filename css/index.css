@@ -298,17 +298,37 @@ header #jumbotron-text {
   margin: 80px auto 10px auto;
   width: 50%;
 }
-.recent-projects-container .second-content {
-  width: 100%;
+footer .footer-content {
+  background-color: #828282;
+  font-weight: normal;
   display: flex;
   flex-direction: row;
+  height: 150px;
+  margin-top: 50px;
+  padding-top: 40px;
 }
-.recent-projects-container .second-content img {
-  width: 50%;
+footer .footer-content .form {
+  width: 35%;
+  margin-left: 50px;
+  margin-right: 10px;
 }
-.recent-projects-container .second-content .text-container {
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 20px;
-  width: 50%;
+footer .footer-content .privacy {
+  font-size: 10px;
+}
+footer .footer-content h5 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+footer .footer-content p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+footer .footer-content .copyright p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
