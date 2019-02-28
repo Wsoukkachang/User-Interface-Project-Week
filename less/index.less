@@ -97,9 +97,11 @@ table{
 
 //header- jumbo picture
 header {
-  height: 600px;
+  height: 473px;
+  display: block;
 
   img{
+    height: 473px;
     width: 100%;
   }
 
@@ -116,34 +118,38 @@ header {
 
 //top content- container (Smith & Jones Architects and Futuristic Designs content)
 .top-content {
-  
+  margin: 50px 50px;
+
   .top-container {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
   }
 
   h2 {
     font-weight: Bold;
     font-size: 28px;
     color: #222222;
-    margin-top: 20px;
+    margin-top: 20%;
     margin-bottom: 10px;
   }
 
-
   .first-content {
     width: 100%;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+
+    img{
+      width: 50%;
+    }  
 
     .text-container {
       flex-direction: column;
       justify-content: space-between;
+      margin: 0 20px;
+      width: 50%;
     }
   }
 
@@ -151,21 +157,27 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+
+    img{
+      width: 50%;
+    }  
 
     .text-container {
       flex-direction: column;
       justify-content: space-between;
+      margin: 0 20px;
+      width: 50%;
     }
   }
 }
 
+//button
 .btn() {
   height: 30px;
   text-decoration: none;
   background-color: #FFFFFF;
   display: inline-block;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 20px 0;
 	padding: 5px 20px;
   font-size: 16px;

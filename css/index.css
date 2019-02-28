@@ -160,9 +160,11 @@ table {
   margin-right: 5%;
 }
 header {
-  height: 600px;
+  height: 473px;
+  display: block;
 }
 header img {
+  height: 473px;
   width: 100%;
 }
 header #jumbotron-text {
@@ -174,47 +176,57 @@ header #jumbotron-text {
   bottom: 280px;
   left: 10%;
 }
+.top-content {
+  margin: 50px 50px;
+}
 .top-content .top-container {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
 }
 .top-content h2 {
   font-weight: Bold;
   font-size: 28px;
   color: #222222;
-  margin-top: 20px;
+  margin-top: 20%;
   margin-bottom: 10px;
 }
 .top-content .first-content {
   width: 100%;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+}
+.top-content .first-content img {
+  width: 50%;
 }
 .top-content .first-content .text-container {
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 20px;
+  width: 50%;
 }
 .top-content .second-content {
   width: 100%;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+}
+.top-content .second-content img {
+  width: 50%;
 }
 .top-content .second-content .text-container {
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 20px;
+  width: 50%;
 }
 .button {
   height: 30px;
   text-decoration: none;
   background-color: #FFFFFF;
   display: inline-block;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 20px 0;
   padding: 5px 20px;
   font-size: 16px;
