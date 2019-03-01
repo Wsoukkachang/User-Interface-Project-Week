@@ -1,3 +1,33 @@
+.button {
+  height: 30px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 20px 0;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: #222222;
+  text-align: center;
+  line-height: 150%;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+.button a a:visited {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+.button a:hover {
+  background-color: #e6e6e6;
+  color: white;
+}
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
@@ -133,7 +163,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Your Code Goes Here */
+html {
+  font-size: 16px;
+  line-height: 24px;
+}
+html,
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #FFFFFF;
+  Color: #222222;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .container .nav-bar {
   display: flex;
   background-color: #99A4AF;
@@ -187,7 +231,7 @@ header #jumbotron-text {
 }
 .top-container h2 {
   font-weight: Bold;
-  font-size: 28px;
+  font-size: 16px;
   color: #222222;
   margin-top: 20%;
   margin-bottom: 10px;
@@ -221,36 +265,6 @@ header #jumbotron-text {
   margin: 0 20px;
   width: 50%;
 }
-.button {
-  height: 30px;
-  text-decoration: none;
-  background-color: #FFFFFF;
-  display: inline-block;
-  border: 1px solid black;
-  margin: 20px 0;
-  padding: 5px 20px;
-  font-size: 16px;
-  color: #222222;
-  text-align: center;
-  line-height: 150%;
-  vertical-align: middle;
-  flex-wrap: wrap;
-  cursor: pointer;
-}
-.button a {
-  text-decoration: none;
-  color: #FFFFFF;
-  display: block;
-}
-.button a a:visited {
-  color: #FFFFFF;
-  background-color: transparent;
-  text-decoration: none;
-}
-.button a:hover {
-  background-color: #e6e6e6;
-  color: white;
-}
 .recent-projects-container {
   margin: 0 50px;
 }
@@ -263,7 +277,7 @@ header #jumbotron-text {
 }
 .recent-projects-container .project-content h2 {
   font-weight: Bold;
-  font-size: 28px;
+  font-size: 16px;
   color: #222222;
 }
 .recent-projects-container .project-content h3 {
@@ -271,7 +285,7 @@ header #jumbotron-text {
   letter-spacing: 2px;
   font-size: 18px;
   top: 185px;
-  left: 488px;
+  left: 71.5%;
   background-color: #D8D8D8;
   height: 35px;
   width: 200px;
@@ -292,43 +306,70 @@ header #jumbotron-text {
 .recent-projects-container .project-content img {
   height: 150px;
 }
+.recent-projects-container .project-content villas-img {
+  height: 150px;
+}
+.recent-projects-container .project-content villas-img h4 {
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 18px;
+  top: 185px;
+  background-color: #D8D8D8;
+  height: 35px;
+  width: 200px;
+  padding-top: 22px;
+  text-align: center;
+}
 .recent-projects-container .project-content .centered-ps {
   justify-content: center;
   margin-top: 80px;
   margin: 80px auto 10px auto;
   width: 50%;
 }
-footer .footer-content {
-  background-color: #828282;
-  font-weight: normal;
-  display: flex;
-  flex-direction: row;
-  height: 150px;
-  margin-top: 50px;
-  padding-top: 40px;
-}
-footer .footer-content .form {
-  width: 35%;
-  margin-left: 50px;
-  margin-right: 10px;
-}
-footer .footer-content .privacy {
-  font-size: 10px;
-}
-footer .footer-content h5 {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-footer .footer-content p {
+footer p {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   color: #FFFFFF;
 }
-footer .footer-content .copyright p {
+footer .footer-content {
+  background-color: #828282;
+  height: 200px;
+  margin-top: 50px;
+  padding-top: 40px;
+}
+footer .footer-content .bottom-content {
+  display: flex;
+  flex-direction: row;
+  font-weight: normal;
+}
+footer .footer-content .bottom-content .form {
+  width: 30%;
+  margin-left: 50px;
+  margin-right: 35px;
+}
+footer .footer-content .bottom-content .form input {
+  width: 90%;
+  font-size: 16px;
+  height: 40px;
+  color: #D3D3D3;
+  margin-top: 8px;
+}
+footer .footer-content .bottom-content h5 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+footer .footer-content .bottom-content .privacy {
+  font-size: 12px;
+}
+footer .footer-content .bottom-content .locations {
+  width: 18%;
+}
+footer .footer-content .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 25px;
 }
