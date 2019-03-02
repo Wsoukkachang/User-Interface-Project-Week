@@ -304,7 +304,7 @@ header #services {
   .header-services #services {
     font-size: 50px;
     line-height: 60px;
-    bottom: 210px;
+    bottom: 90px;
     left: 5%;
   }
 }
@@ -553,7 +553,11 @@ header #services {
 }
 @media (max-width: 500px) {
   .tabs-link .button {
-    margin: 15px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    height: 50px;
+    padding: 0px 0px;
+    line-height: 250%;
   }
 }
 .tabs-link .button:hover {
@@ -592,7 +596,7 @@ header #services {
 @media (max-width: 500px) {
   .services-content .tabs-item .tabs-title {
     justify-content: flex-start;
-    font-size: 3rem;
+    font-size: 28px;
   }
 }
 .services-content .tabs-item .tabs-description {
@@ -601,8 +605,19 @@ header #services {
 .services-content img {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .services-content img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 .tabs-item-selected {
   display: flex;
+}
+@media (max-width: 500px) {
+  .tabs-item-selected {
+    margin-top: 30px;
+  }
 }
 footer p {
   font-weight: normal;
