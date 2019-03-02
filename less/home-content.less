@@ -1,29 +1,30 @@
 //top container (Smith & Jones Architects and Futuristic Designs)
 .top-container {
-    margin: 50px 50px;
+    margin: 5% auto;
+    display: flex;
     
     @media @mobile {
-        margin: 50px 0px;
+        margin: 5% 0px;
         margin-bottom: 10px;
     }
     
     //top content (Smith & Jones Architects and Futuristic Designs content)
     .top-content {
         display: flex;
-        width: 100%;
         flex-direction: column;
         justify-content: space-between;
+        width: 100vw;
         
         @media @mobile {
-            margin: 0px 0px;
+            margin: 0% 0%;
         }
         
         h2 {
-            font-weight: Bold;
+            font-weight: bold;
             font-size: 16px;
             color: #222222;
-            margin-top: 20%;
-            margin-bottom: 10px;
+            margin-top: 15%;
+            margin-bottom: 7%;
             
             @media @mobile {
                 margin-top: 5%;
@@ -34,8 +35,9 @@
         
         // Smith & Jones Architects content
         .first-content {
-            width: 100%;
-            margin-bottom: 50px;
+            width: 90vw;
+            margin: 0% 5%;
+            margin-bottom: 7%;
             display: flex;
             flex-direction: row;
             
@@ -47,24 +49,33 @@
             }
             
             img {
-                width: 50%;
+                width: 45vw;
                 
                 @media @mobile {
-                    width: 90%;
+                    width: 90vw;
                 }
             }
+            
+            //change first image ---still working on this
+            // .first-img {
+                
+            //     @media @mobile {
+            //         background-image: url("/img/home/home-mobile-img-1.png");
+            //     }
+            // }
+
             
             // text content (Smith & Jones Architects)
             .text-container {
                 flex-direction: column;
                 justify-content: space-between;
-                margin: 0 20px;
-                width: 50%;
+                margin-right: 20px;
+                width: 45vw;
 
                 @media @mobile {
-                    width: 90%;
+                    width: 90vw;
                     align-items: center;
-                    margin: 0px 50px;
+                    margin: 0px 5%;
                     height: 250px;
                 }
             }
@@ -72,9 +83,10 @@
         
         // Futuristic Designs content
         .second-content {
-            width: 100%;
+            width: 90vw;
             display: flex;
             flex-direction: row;
+            margin: 0% 5%;
 
             @media @mobile {
                 display: flex;
@@ -84,10 +96,10 @@
             }
             
             img {
-                width: 50%;
+                width: 45vw;
                 
                 @media @mobile {
-                    width: 90%;
+                    width: 90vw;
                 }
             }
             
@@ -96,10 +108,10 @@
                 flex-direction: column;
                 justify-content: space-between;
                 margin: 0 20px;
-                width: 50%;
+                width: 45vw;
                 
                 @media @mobile {
-                    width: 90%;
+                    width: 90vw;
                     align-items: center;
                 }
             }
@@ -110,12 +122,11 @@
 
 //recent-projects (The Villas, Outskirts, The Blocks)
 .recent-projects-container {
-    margin: 0 50px;
     
     .project-content {
         display: flex;
-        width: 100%;
-        margin: 0 auto;
+        width: 95vw;
+        margin: 0 5%;
         flex-direction: column;
         justify-content: space-between;
         
@@ -138,20 +149,20 @@
             z-index: 1;
             font-size: 18px;
             top: 185px;
-            left: 71.5%;
+            left: 68.7%;
             background-color: #D8D8D8;
-            height: 35px;
-            width: 200px;
+            height: 4vh;
+            width: 25vw;
             padding-top: 22px;
             text-align: center;
 
             @media @mobile {
                 letter-spacing: 8px;
-                height: 55px;
-                width: 350px;
-                top: 200px;
-                left: 7%;
-                font-size: 30px;
+                height: 5.5vh;
+                width: 82vw;
+                top: 24vh;
+                left: 4.5vw;
+                font-size: 1.6rem;
             }
         }
 
@@ -163,26 +174,27 @@
             font-size: 18px;
             top: 185px;
             background-color: #D8D8D8;
-            height: 35px;
-            width: 200px;
+            height: 4vh;
+            width: 25vw;
             padding-top: 22px;
             text-align: center;
 
             @media @mobile {
                 letter-spacing: 8px;
-                height: 55px;
-                width: 350px;
-                top: 200px;
-                left: 7%;
-                font-size: 30px;
+                height: 5.5vh;
+                width: 82vw;
+                top: 24vh;
+                left: 4.5vw;
+                font-size: 1.6rem;
             }
         }
         
         img {
             height: 150px;
+            width: 90vw;
 
             @media @mobile {
-                width: 100%;
+                width: 90vw;
             }
 
         }  
@@ -192,8 +204,8 @@
     .centered-ps {
         justify-content: center;
         margin-top: 80px;
-        margin: 80px auto 10px auto;
-        width: 85%;
+        margin: 8vh 5vw 2vh 5vw;
+        width: 85vw;
         }
     }
 

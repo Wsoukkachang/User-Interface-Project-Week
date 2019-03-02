@@ -3,16 +3,17 @@
     display: flex;
     background-color: #99A4AF;
     justify-content: space-between;
-    padding: 10px;
+    width: 100vw;
 
     h1 {
     font-weight: Bold;
     font-size: 24px;
     color: #ffffff;
+    margin: 2% 0;
     margin-left: 5%;
 
     @media @mobile {
-        margin-left: 1%;
+        margin-left: 5%;
       }
     }
 
@@ -31,10 +32,39 @@
     }
 
     img {
-    margin-right: 5%;
-
-    @media @mobile {
-        margin-right: 1%;
+      margin: 2% 0;
+      margin-right: 5%;
+      
+      @media @mobile {
+        margin-right: 5%;
       }
     }
+}
+
+.nav-bar-active {
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100%;
+  width: 100vw;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 2;
+
+  .nav {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    align-self: center;
+    width: 25vw;
+    margin: 0px auto;
+    font-size: 3.5rem;
+    line-height: 150%;
+
+    @media @mobile {
+
+    }
+
+  }
 }

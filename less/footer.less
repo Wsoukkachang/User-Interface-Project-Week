@@ -6,17 +6,23 @@ footer {
       font-size: 14px;
       line-height: 26px;
       color: #FFFFFF;
-      width: 300px;
+      width: 15vw;
+
+      @media @mobile {
+        width: 50vw;
+      }
+
     }
   
     .footer-content {
       background-color: #828282;
-      height: 250px;
+      height: 30vh;
       margin-top: 50px;
       padding-top: 40px;
+      width: 100vw;
 
       @media @mobile {
-        height: 700px;
+        height: 75vh;
     }
   
       .bottom-content {
@@ -31,14 +37,13 @@ footer {
       
         // form container to input e-mail address
         .form {
-          width: 30%;
-          margin-left: 50px;
-          margin-right: 35px;
+          width: 30vw;
+          margin-left: 5vw;
+          margin-right: 4vw;
 
           @media @mobile {
-            width: 90%;
-            margin-left: 20px;
-            margin-right: 20px;
+            width: 90vw;
+            margin: 0 5vw;
   
         }
 
@@ -54,28 +59,29 @@ footer {
   
         h5 {
           font-weight: normal;
-          font-size: 20px;
+          font-size: 1.4rem;
           line-height: 24px;
           color: #FFFFFF;
         }
   
         //privacy text (We'll never share your email with anyone else.)
         .privacy {
-          font-size: 12px;
+          font-size: 0.6rem;
+          width: 90vw;
 
           @media @mobile {
-            font-size: 16px;
+            font-size: 0.7rem;
         }
   
         }
   
         .locations {
-          width: 18%;
+          width: 20vw;
 
           @media @mobile {
-              margin: 20px 50px;
-              font-size: 16px;
-              width: 100%;
+              margin: 2% 5%;
+              font-size: 1rem;
+              width: 95vw;
             }
         }
       }
@@ -85,11 +91,16 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
+        padding-top: 5vh;
+        margin: 0 auto;
+        width: 50vh;
+        font-size: 0.9rem;
 
         @media @mobile {
             justify-content: flex-start;
-            margin-left: 50px;
+            width: 100vw;
+            padding-left: 5%;
+            padding-top: 2vh;
           }
       }
     }
