@@ -283,18 +283,12 @@ header #services {
   display: block;
 }
 @media (max-width: 500px) {
-  .header-services {
-    height: 273px;
-  }
 }
 .header-services img {
   height: 200px;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .header-services img {
-    height: 273px;
-  }
 }
 .header-services #services {
   font-weight: Bold;
@@ -506,7 +500,7 @@ footer p {
 }
 footer .footer-content {
   background-color: #828282;
-  height: 200px;
+  height: 250px;
   margin-top: 50px;
   padding-top: 40px;
 }
