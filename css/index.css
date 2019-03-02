@@ -14,6 +14,14 @@
   flex-wrap: wrap;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .button {
+    width: 100%;
+    height: 40px;
+    padding: 0px 0px;
+    line-height: 250%;
+  }
+}
 .button a {
   text-decoration: none;
   color: #FFFFFF;
@@ -178,38 +186,63 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.container .nav-bar {
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+.nav-bar {
   display: flex;
   background-color: #99A4AF;
   justify-content: space-between;
   padding: 10px;
 }
-.container .nav-bar h1 {
+.nav-bar h1 {
   font-weight: Bold;
   font-size: 24px;
   color: #ffffff;
   margin-left: 5%;
 }
-.container .nav-bar .nav {
+@media (max-width: 500px) {
+  .nav-bar h1 {
+    margin-left: 1%;
+  }
+}
+.nav-bar .nav {
   display: none;
 }
-.container .nav-bar a {
+.nav-bar a {
   text-decoration: none;
   color: white;
 }
-.container .nav-bar a:hover {
+.nav-bar a:hover {
   color: #222222;
 }
-.container .nav-bar img {
+.nav-bar img {
   margin-right: 5%;
+}
+@media (max-width: 500px) {
+  .nav-bar img {
+    margin-right: 1%;
+  }
 }
 header {
   height: 473px;
   display: block;
 }
+@media (max-width: 500px) {
+  header {
+    height: 273px;
+  }
+}
 header img {
   height: 473px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  header img {
+    height: 273px;
+  }
 }
 header #jumbotron-text {
   font-weight: Bold;
@@ -220,8 +253,21 @@ header #jumbotron-text {
   bottom: 280px;
   left: 10%;
 }
+@media (max-width: 500px) {
+  header #jumbotron-text {
+    font-size: 50px;
+    line-height: 60px;
+    bottom: 210px;
+    left: 5%;
+  }
+}
 .top-container {
   margin: 50px 50px;
+}
+@media (max-width: 500px) {
+  .top-container {
+    margin: 50px 0px;
+  }
 }
 .top-container .top-content {
   display: flex;
@@ -229,41 +275,93 @@ header #jumbotron-text {
   flex-direction: column;
   justify-content: space-between;
 }
-.top-container h2 {
+@media (max-width: 500px) {
+  .top-container .top-content {
+    margin: 0px 0px;
+  }
+}
+.top-container .top-content h2 {
   font-weight: Bold;
   font-size: 16px;
   color: #222222;
   margin-top: 20%;
   margin-bottom: 10px;
 }
-.top-container .first-content {
+@media (max-width: 500px) {
+  .top-container .top-content h2 {
+    margin-top: 5%;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+.top-container .top-content .first-content {
   width: 100%;
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
 }
-.top-container .first-content img {
+@media (max-width: 500px) {
+  .top-container .top-content .first-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0px 10px;
+  }
+}
+.top-container .top-content .first-content img {
   width: 50%;
 }
-.top-container .first-content .text-container {
+@media (max-width: 500px) {
+  .top-container .top-content .first-content img {
+    width: 90%;
+  }
+}
+.top-container .top-content .first-content .text-container {
   flex-direction: column;
   justify-content: space-between;
   margin: 0 20px;
   width: 50%;
 }
-.top-container .second-content {
+@media (max-width: 500px) {
+  .top-container .top-content .first-content .text-container {
+    width: 90%;
+    align-items: center;
+    margin: 0px 50px;
+    height: 250px;
+  }
+}
+.top-container .top-content .second-content {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.top-container .second-content img {
+@media (max-width: 500px) {
+  .top-container .top-content .second-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px;
+  }
+}
+.top-container .top-content .second-content img {
   width: 50%;
 }
-.top-container .second-content .text-container {
+@media (max-width: 500px) {
+  .top-container .top-content .second-content img {
+    width: 90%;
+  }
+}
+.top-container .top-content .second-content .text-container {
   flex-direction: column;
   justify-content: space-between;
   margin: 0 20px;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .top-container .top-content .second-content .text-container {
+    width: 90%;
+    align-items: center;
+  }
 }
 .recent-projects-container {
   margin: 0 50px;
