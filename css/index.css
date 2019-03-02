@@ -11,7 +11,6 @@
   text-align: center;
   line-height: 150%;
   vertical-align: middle;
-  flex-wrap: wrap;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -189,7 +188,38 @@ body {
 @media (max-width: 500px) {
   .container {
     max-width: 500px;
+    margin: 0px auto;
   }
+}
+.container .nav-bar-active {
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 2;
+  padding: 10px;
+}
+.container .nav-bar-active img {
+  padding-right: 25px;
+}
+.container .nav-bar-active .nav {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  align-self: center;
+  margin: 0px auto;
+  font-size: 50px;
+  line-height: 150%;
+  width: 25%;
+}
+.menu-button {
+  cursor: pointer;
 }
 .nav-bar {
   display: flex;
@@ -245,13 +275,15 @@ header img {
   }
 }
 header #jumbotron-text {
-  font-weight: Bold;
+  font-weight: bold;
   font-size: 64px;
   line-height: 75px;
   color: #FFFFFF;
   position: relative;
   bottom: 280px;
   left: 10%;
+  width: 150px;
+  margin-right: 0px;
 }
 @media (max-width: 500px) {
   header #jumbotron-text {
@@ -259,6 +291,8 @@ header #jumbotron-text {
     line-height: 60px;
     bottom: 210px;
     left: 5%;
+    width: 80%;
+    margin: 0px 0px;
   }
 }
 .header-services {
@@ -477,6 +511,8 @@ header #jumbotron-text {
 }
 .services-page {
   margin: 50px 50px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .top-content {
   margin-bottom: 10px;
@@ -484,7 +520,7 @@ header #jumbotron-text {
 .tabs-link {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   .tabs-link {
@@ -507,10 +543,14 @@ header #jumbotron-text {
   text-align: center;
   line-height: 150%;
   vertical-align: middle;
-  flex-wrap: wrap;
   cursor: pointer;
   font-weight: bold;
-  margin: 0 15px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  padding: 5px 1px;
+  line-height: 200%;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 500px) {
   .tabs-link .button {
@@ -538,7 +578,8 @@ header #jumbotron-text {
   .tabs-link .button {
     font-size: 20px;
     margin: 10px 0;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     padding: 0px 0px;
     line-height: 250%;
   }
@@ -555,7 +596,7 @@ header #jumbotron-text {
 .services-content {
   display: flex;
   display: none;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 @media (max-width: 500px) {
   .services-content {
@@ -564,7 +605,6 @@ header #jumbotron-text {
 }
 .services-content .tabs-item {
   width: 90%;
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -584,6 +624,7 @@ header #jumbotron-text {
 }
 .services-content .tabs-item .tabs-description {
   margin: 20px 0;
+  margin-right: 20px;
 }
 .services-content img {
   width: 50%;
@@ -607,6 +648,7 @@ footer p {
   font-size: 14px;
   line-height: 26px;
   color: #FFFFFF;
+  width: 300px;
 }
 footer .footer-content {
   background-color: #828282;
@@ -638,6 +680,8 @@ footer .footer-content .bottom-content .form {
 @media (max-width: 500px) {
   footer .footer-content .bottom-content .form {
     width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 footer .footer-content .bottom-content .form input {
