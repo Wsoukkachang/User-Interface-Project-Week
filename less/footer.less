@@ -13,16 +13,29 @@ footer {
       height: 200px;
       margin-top: 50px;
       padding-top: 40px;
+
+      @media @mobile {
+        height: 700px;
+    }
   
       .bottom-content {
         display: flex;
         flex-direction: row;
         font-weight: normal;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+        }
       
         .form {
           width: 30%;
           margin-left: 50px;
           margin-right: 35px;
+
+          @media @mobile {
+            width: 90%;
+        }
   
           input {
             width: 90%;
@@ -42,10 +55,21 @@ footer {
   
         .privacy {
           font-size: 12px;
+
+          @media @mobile {
+            font-size: 16px;
+        }
+  
         }
   
         .locations {
           width: 18%;
+
+          @media @mobile {
+              margin: 20px 50px;
+              font-size: 16px;
+              width: 100%;
+            }
         }
       }
   
@@ -54,6 +78,11 @@ footer {
         align-items: center;
         justify-content: center;
         margin-top: 25px;
+
+        @media @mobile {
+            justify-content: flex-start;
+            margin-left: 50px;
+          }
       }
     }
   }
