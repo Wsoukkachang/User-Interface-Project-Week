@@ -4,6 +4,7 @@
     
     @media @mobile {
         margin: 50px 0px;
+        margin-bottom: 10px;
     }
     
     .top-content {
@@ -104,74 +105,91 @@
 
 //recent-projects (The Villas, Outskirts, The Blocks)
 .recent-projects-container {
-margin: 0 50px;
+    margin: 0 50px;
+    
+    .project-content {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        h2 {
+            font-weight: Bold;
+            font-size: 16px;
+            color: #222222;
+            
+            @media @mobile {
+                margin-top: 5%;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+        }
 
-.project-content {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: space-between;
+            // grey squares with text over pictures (The Villas, The Blocks)
+            
+        h3 {
+            position: relative;
+            letter-spacing: 2px;
+            z-index: 1;
+            font-size: 18px;
+            top: 185px;
+            left: 71.5%;
+            background-color: #D8D8D8;
+            height: 35px;
+            width: 200px;
+            padding-top: 22px;
+            text-align: center;
 
-    h2 {
-    font-weight: Bold;
-    font-size: 16px;
-    color: #222222;
+            @media @mobile {
+                letter-spacing: 8px;
+                height: 55px;
+                width: 350px;
+                top: 200px;
+                left: 7%;
+                font-size: 30px;
+            }
+        }
+
+        // grey squares with text over pictures (Outskirts)
+        
+        h4 {
+            position: relative;
+            letter-spacing: 2px;
+            z-index: 1;
+            font-size: 18px;
+            top: 185px;
+            background-color: #D8D8D8;
+            height: 35px;
+            width: 200px;
+            padding-top: 22px;
+            text-align: center;
+
+            @media @mobile {
+                letter-spacing: 8px;
+                height: 55px;
+                width: 350px;
+                top: 200px;
+                left: 7%;
+                font-size: 30px;
+            }
+        }
+        
+        img {
+            height: 150px;
+
+            @media @mobile {
+                width: 100%;
+            }
+
+        }  
     }
-
-        // grey squares with text over pictures (The Villas, The Blocks)
-    h3 {
-    position: relative;
-    letter-spacing: 2px;
-    font-size: 18px;
-    top: 185px;
-    left: 71.5%;
-    background-color: #D8D8D8;
-    height: 35px;
-    width: 200px;
-    padding-top: 22px;
-    text-align: center;
-    }
-
-    // grey squares with text over pictures (Outskirts)
-    h4 {
-    position: relative;
-    letter-spacing: 2px;
-    font-size: 18px;
-    top: 185px;
-    background-color: #D8D8D8;
-    height: 35px;
-    width: 200px;
-    padding-top: 22px;
-    text-align: center;
-    }
-
-    img{
-    height: 150px;
-    }  
-
-    villas-img {
-    height: 150px;
-
-    h4 {
-        position: relative;
-        letter-spacing: 2px;
-        font-size: 18px;
-        top: 185px;
-        background-color: #D8D8D8;
-        height: 35px;
-        width: 200px;
-        padding-top: 22px;
-        text-align: center;
-    }
-    }
-
+    
     .centered-ps {
-    justify-content: center;
-    margin-top: 80px;
-    margin: 80px auto 10px auto;
-    width: 50%;
+        justify-content: center;
+        margin-top: 80px;
+        margin: 80px auto 10px auto;
+        width: 85%;
+        }
     }
-}
-}
 
