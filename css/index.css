@@ -171,8 +171,8 @@ table {
   border-spacing: 0;
 }
 html {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 html,
 body {
@@ -822,12 +822,12 @@ footer .footer-content .bottom-content .services-form input {
 }
 @media (max-width: 500px) {
   footer .footer-content .bottom-content .services-form input {
-    width: 90vw;
+    width: 89vw;
   }
 }
 footer .footer-content .bottom-content h5 {
   font-weight: normal;
-  width: 100vw;
+  width: 30vw;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #FFFFFF;
@@ -835,11 +835,12 @@ footer .footer-content .bottom-content h5 {
 @media (max-width: 500px) {
   footer .footer-content .bottom-content h5 {
     font-size: 1.4rem;
+    width: 80vw;
   }
 }
 footer .footer-content .bottom-content .privacy {
   font-size: 0.6rem;
-  width: 35vw;
+  width: 30vw;
 }
 @media (max-width: 500px) {
   footer .footer-content .bottom-content .privacy {
