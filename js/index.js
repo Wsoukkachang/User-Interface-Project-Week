@@ -1,18 +1,19 @@
 // JS goes here
 
-
+// select nav-bar image
 let menuButton = document.querySelector('.nav-bar img');
 
-// click event for nav-button
+// click event for nav-bar image
 menuButton.addEventListener('click', () => {
    menu.classList.toggle('nav-bar-active');
 
-   // changes images of navButton 
+   // changes images of nav-bar image
    menuButton.src.includes('img/nav-hamburger.png') ? menuButton.src = 'img/nav-hamburger-close.png' : menuButton.src = 'img/nav-hamburger.png';
 })
 
 let menu = document.querySelector('.nav-bar');
 
+// toggles menu open
 const toggleMenu = () => {
     menu.classList.toggle('menu--open');
 }
@@ -39,6 +40,7 @@ class TabLink {
     }
 }
 
+// changes content when tab is selected
 class TabItem {
     constructor(element) {
         this.element = element;
@@ -46,13 +48,13 @@ class TabItem {
 
     select() {
         let items = document.querySelectorAll('.services-content');
-        
+
         items.forEach(item => item.classList.remove('tabs-item-selected'));
         this.element.classList.add('tabs-item-selected');
     }
 }
 
-let links = document.querySelectorAll('.button');
+let links = document.querySelectorAll('.button'); // make links for buttons
 links = Array.from(links).map(link => new TabLink(link));
 
-links[0].select();// select first item on load
+links[0].select(); // select first item on load
