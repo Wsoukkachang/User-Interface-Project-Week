@@ -181,13 +181,13 @@ body {
   Color: #222222;
 }
 .container {
-  max-width: 800px;
   width: 100vw;
   margin: 0px auto;
 }
 @media (max-width: 500px) {
   .container {
     max-width: 500px;
+    width: 100vw;
   }
 }
 .menu-button {
@@ -251,18 +251,23 @@ body {
   font-size: 3.5rem;
   line-height: 150%;
 }
+@media (max-width: 500px) {
+  .nav-bar-active .nav {
+    width: 50vw;
+  }
+}
 header {
-  height: 473px;
+  height: 46vh;
   display: block;
-  width: 100%;
+  width: 100vw;
 }
 @media (max-width: 500px) {
   header {
-    height: 273px;
+    height: 36vh;
   }
 }
 header img {
-  height: 473px;
+  height: 46vh;
   width: 100vw;
 }
 @media (max-width: 500px) {
@@ -367,7 +372,8 @@ header #jumbotron-text {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin: 0px 10px;
+    margin: 0px 5%;
+    margin-bottom: 0%;
   }
 }
 .top-container .top-content .first-content img {
@@ -389,7 +395,7 @@ header #jumbotron-text {
     width: 90vw;
     align-items: center;
     margin: 0px 5%;
-    height: 250px;
+    height: 28vh;
   }
 }
 .top-container .top-content .second-content {
@@ -403,7 +409,7 @@ header #jumbotron-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 10px;
+    margin: 0px 5%;
   }
 }
 .top-container .top-content .second-content img {
@@ -428,7 +434,7 @@ header #jumbotron-text {
 }
 .recent-projects-container .project-content {
   display: flex;
-  width: 95vw;
+  width: 90vw;
   margin: 0 5%;
   flex-direction: column;
   justify-content: space-between;
@@ -441,7 +447,7 @@ header #jumbotron-text {
 @media (max-width: 500px) {
   .recent-projects-container .project-content h2 {
     margin-top: 5%;
-    margin-bottom: 10px;
+    margin-bottom: 0%;
     font-size: 30px;
   }
 }
@@ -453,17 +459,17 @@ header #jumbotron-text {
   top: 185px;
   left: 68.7%;
   background-color: #D8D8D8;
-  height: 4vh;
-  width: 25vw;
+  height: 4.5vh;
+  width: 28.2vw;
   padding-top: 22px;
   text-align: center;
 }
 @media (max-width: 500px) {
   .recent-projects-container .project-content h3 {
     letter-spacing: 8px;
-    height: 5.5vh;
+    height: 7vh;
     width: 82vw;
-    top: 24vh;
+    top: 28vh;
     left: 4.5vw;
     font-size: 1.6rem;
   }
@@ -475,7 +481,7 @@ header #jumbotron-text {
   font-size: 18px;
   top: 185px;
   background-color: #D8D8D8;
-  height: 4vh;
+  height: 4.5vh;
   width: 25vw;
   padding-top: 22px;
   text-align: center;
@@ -483,9 +489,9 @@ header #jumbotron-text {
 @media (max-width: 500px) {
   .recent-projects-container .project-content h4 {
     letter-spacing: 8px;
-    height: 5.5vh;
+    height: 7vh;
     width: 82vw;
-    top: 24vh;
+    top: 28vh;
     left: 4.5vw;
     font-size: 1.6rem;
   }
@@ -500,10 +506,18 @@ header #jumbotron-text {
   }
 }
 .recent-projects-container .centered-ps {
-  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 50vw;
   margin-top: 80px;
-  margin: 8vh 5vw 2vh 5vw;
-  width: 85vw;
+  margin: 10vh auto 2vh auto;
+}
+@media (max-width: 500px) {
+  .recent-projects-container .centered-ps {
+    margin-top: 12vh;
+  }
 }
 .services-page {
   margin: 50px 50px;
@@ -654,13 +668,13 @@ footer p {
 footer .footer-content {
   background-color: #828282;
   height: 30vh;
-  margin-top: 50px;
+  margin-top: 5%;
   padding-top: 40px;
   width: 100vw;
 }
 @media (max-width: 500px) {
   footer .footer-content {
-    height: 75vh;
+    height: 82vh;
   }
 }
 footer .footer-content .bottom-content {
@@ -686,14 +700,16 @@ footer .footer-content .bottom-content .form {
   }
 }
 footer .footer-content .bottom-content .form input {
-  width: 90%;
-  font-size: 16px;
-  height: 40px;
+  width: 100%;
+  font-size: 1rem;
+  height: 4vh;
   color: #D3D3D3;
   margin-top: 8px;
+  border-radius: 5px;
 }
 footer .footer-content .bottom-content h5 {
   font-weight: normal;
+  width: 100%;
   font-size: 1.4rem;
   line-height: 24px;
   color: #FFFFFF;

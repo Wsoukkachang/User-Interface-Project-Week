@@ -45,7 +45,8 @@
                 display: flex;
                 flex-direction: column-reverse;
                 align-items: center;
-                margin: 0px 10px;
+                margin: 0px 5%;
+                margin-bottom: 0%;
             }
             
             img {
@@ -76,7 +77,7 @@
                     width: 90vw;
                     align-items: center;
                     margin: 0px 5%;
-                    height: 250px;
+                    height: 28vh;
                 }
             }
         }
@@ -92,7 +93,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0px 10px;
+                margin: 0px 5%;
             }
             
             img {
@@ -125,7 +126,7 @@
     
     .project-content {
         display: flex;
-        width: 95vw;
+        width: 90vw;
         margin: 0 5%;
         flex-direction: column;
         justify-content: space-between;
@@ -137,7 +138,7 @@
             
             @media @mobile {
                 margin-top: 5%;
-                margin-bottom: 10px;
+                margin-bottom: 0%;
                 font-size: 30px;
             }
         }
@@ -151,16 +152,16 @@
             top: 185px;
             left: 68.7%;
             background-color: #D8D8D8;
-            height: 4vh;
-            width: 25vw;
+            height: 4.5vh;
+            width: 28.2vw;
             padding-top: 22px;
             text-align: center;
 
             @media @mobile {
                 letter-spacing: 8px;
-                height: 5.5vh;
+                height: 7vh;
                 width: 82vw;
-                top: 24vh;
+                top: 28vh;
                 left: 4.5vw;
                 font-size: 1.6rem;
             }
@@ -174,16 +175,16 @@
             font-size: 18px;
             top: 185px;
             background-color: #D8D8D8;
-            height: 4vh;
+            height: 4.5vh;
             width: 25vw;
             padding-top: 22px;
             text-align: center;
 
             @media @mobile {
                 letter-spacing: 8px;
-                height: 5.5vh;
+                height: 7vh;
                 width: 82vw;
-                top: 24vh;
+                top: 28vh;
                 left: 4.5vw;
                 font-size: 1.6rem;
             }
@@ -202,10 +203,15 @@
     
     // recent-projects p's
     .centered-ps {
-        justify-content: center;
+        flex-direction: column;
+        .center();
+        width: 50vw;
         margin-top: 80px;
-        margin: 8vh 5vw 2vh 5vw;
-        width: 85vw;
+        margin: 10vh auto 2vh auto;
+
+        @media @mobile {
+            margin-top: 12vh;
         }
     }
+}
 
