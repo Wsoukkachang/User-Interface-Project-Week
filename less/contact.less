@@ -1,0 +1,87 @@
+.contact-content {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+
+    display: flex;
+    justify-content: space-around;
+
+    @media @mobile {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 15% auto;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 2% auto;
+        line-height: 1rem;
+    }
+    
+    .buildings {
+        margin-top: 20px;
+        
+        @media @mobile {
+            margin: 0;
+        }
+    }
+
+    .locations {
+        width: 30%;
+    }
+    
+    .textbox {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 25px;
+        
+        @media @mobile {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .select {
+        width: 99.5%;
+        height: 30px;
+        margin-bottom: 30px;
+
+        @media @mobile {
+            margin-bottom: 10px;
+        }
+    
+    }
+    
+    .email-box {
+        width: 99.5%;
+        height: 35px;
+    }
+    
+    .button {
+        .btn;
+        width: 25%;
+
+        @media @mobile {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        
+        
+        
+        &:hover {
+            cursor: pointer;
+            background: #48a0bc;
+            color: white;
+        }
+    }
+
+    .florida {
+        margin: 30px 0;
+    }
+}

@@ -246,6 +246,15 @@ body {
     margin-right: 5%;
   }
 }
+.nav-bar .contact-nav-button {
+  margin: 2% 0;
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .nav-bar .contact-nav-button {
+    margin-right: 5%;
+  }
+}
 .nav-bar-active {
   align-items: flex-start;
   align-content: flex-start;
@@ -335,6 +344,36 @@ header #jumbotron-text {
 }
 @media (max-width: 500px) {
   .header-services #services {
+    font-size: 50px;
+    line-height: 60px;
+    bottom: 90px;
+    left: 5%;
+  }
+}
+.header-contact {
+  height: 200px;
+  display: block;
+}
+@media (max-width: 500px) {
+}
+.header-contact img {
+  height: 200px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+}
+.header-contact #contact {
+  font-weight: Bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 85px;
+  left: 10%;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .header-contact #contact {
     font-size: 50px;
     line-height: 60px;
     bottom: 90px;
@@ -694,7 +733,7 @@ header #jumbotron-text {
   }
 }
 .services-content .tabs-item {
-  width: 36vw;
+  width: 48%;
   display: flex;
   flex-direction: column;
 }
@@ -705,7 +744,8 @@ header #jumbotron-text {
 }
 .services-content .tabs-item .tabs-title {
   font-weight: bold;
-  width: 40vw;
+  width: 25vw;
+  padding-bottom: 5%;
 }
 @media (max-width: 500px) {
   .services-content .tabs-item .tabs-title {
@@ -715,26 +755,24 @@ header #jumbotron-text {
   }
 }
 .services-content .tabs-item .tabs-description {
-  display: flex;
-  align-content: center;
-  align-items: center;
   margin-bottom: 2%;
   margin-right: 2%;
-  width: 36vw;
-  font-size: 0.9rem;
+  width: 100%;
+  font-size: 1rem;
 }
 @media (max-width: 500px) {
   .services-content .tabs-item .tabs-description {
     margin: 5% 0;
+    margin-bottom: 5%;
     width: 90vw;
   }
 }
 .services-content img {
-  width: 36vw;
+  width: 48%;
 }
 @media (max-width: 500px) {
   .services-content img {
-    width: 90vw;
+    width: 100%;
   }
 }
 .tabs-item-selected {
@@ -746,6 +784,118 @@ header #jumbotron-text {
     margin-top: 7%;
     margin-bottom: 3%;
   }
+}
+.contact-content {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .contact-content {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+.contact-content h2 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 15% auto;
+}
+.contact-content h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 2% auto;
+  line-height: 1rem;
+}
+.contact-content .buildings {
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .contact-content .buildings {
+    margin: 0;
+  }
+}
+.contact-content .locations {
+  width: 30%;
+}
+.contact-content .textbox {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+@media (max-width: 500px) {
+  .contact-content .textbox {
+    margin-bottom: 10px;
+  }
+}
+.contact-content .select {
+  width: 99.5%;
+  height: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .contact-content .select {
+    margin-bottom: 10px;
+  }
+}
+.contact-content .email-box {
+  width: 99.5%;
+  height: 35px;
+}
+.contact-content .button {
+  height: 30px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 20px 0;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: #222222;
+  text-align: center;
+  line-height: 3.5vh;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .contact-content .button {
+    width: 90vw;
+    height: 40px;
+    padding: 0px 0px;
+    line-height: 250%;
+  }
+}
+.contact-content .button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+.contact-content .button a a:visited {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+.contact-content .button a:hover {
+  background-color: #e6e6e6;
+  color: white;
+}
+@media (max-width: 500px) {
+  .contact-content .button {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+.contact-content .button:hover {
+  cursor: pointer;
+  background: #48a0bc;
+  color: white;
+}
+.contact-content .florida {
+  margin: 30px 0;
 }
 footer p {
   font-weight: normal;

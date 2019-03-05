@@ -78,3 +78,42 @@ header {
         }
       }
   }
+
+  //header for contact page
+.header-contact {
+  height: 200px;
+  display: block;
+
+  @media @mobile {
+      // height: 273px;
+    }
+
+    //contact header picture
+        img {
+    height: 200px;
+    width: 100%;
+
+    @media @mobile {
+      // height: 273px;
+    }
+  }
+
+  // big white text in jumbo picture (Contact text)
+  #contact {
+      font-weight: Bold;
+      font-size: 64px;
+      line-height: 75px;
+      color: #FFFFFF;
+      position: relative;
+      bottom: 85px;
+      left: 10%;
+      width: 70%;
+
+      @media @mobile {
+        font-size: 50px;
+        line-height: 60px;
+        bottom: 90px;
+        left: 5%;
+      }
+    }
+}

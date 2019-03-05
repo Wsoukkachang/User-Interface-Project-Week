@@ -97,7 +97,7 @@
     
     // left side with description
     .tabs-item {
-        width: 36vw; // need to be the same width as .tabs-description
+        width: 48%; // need to be the same width as .tabs-description
         display: flex;
         flex-direction: column;
 
@@ -108,7 +108,8 @@
         // title
         .tabs-title {
             font-weight: bold;
-            width: 40vw;
+            width: 25vw;
+            padding-bottom: 5%;
 
             @media @mobile {
                 justify-content: flex-start;
@@ -119,14 +120,14 @@
 
         // text description
         .tabs-description {
-            .center();
             margin-bottom: 2%;
             margin-right: 2%;
-            width: 36vw; // need to be same width as .tabs-items
-            font-size: 0.9rem;
+            width: 100%; // need to be same width as .tabs-items
+            font-size: 1rem;
 
             @media @mobile {
                 margin: 5% 0;
+                margin-bottom: 5%;
                 width: 90vw;
             }
         }
@@ -134,10 +135,10 @@
 
     // image in section
     img {
-        width: 36vw;
+        width: 48%;
 
         @media @mobile {
-            width: 90vw;
+            width: 100%;
         }
     }
 }
