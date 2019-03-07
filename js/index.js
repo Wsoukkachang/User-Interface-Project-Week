@@ -1,5 +1,3 @@
-// JS goes here
-
 // select nav-bar image
 let menuButton = document.querySelector('.nav-bar img');
 
