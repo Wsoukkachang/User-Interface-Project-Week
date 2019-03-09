@@ -1,4 +1,4 @@
-// select nav-bar image
+// // select nav-bar image
 let menuButton = document.querySelector('.nav-bar img');
 
 // click event for nav-bar image

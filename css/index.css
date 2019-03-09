@@ -184,7 +184,7 @@ body {
   Color: #222222;
 }
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0px auto;
 }
 @media (max-width: 500px) {
@@ -829,7 +829,7 @@ header #jumbotron-text {
   width: 100vw;
   padding-right: 0px;
   padding-left: 0px;
-  margin-top: 0.5%;
+  margin-top: 2.6%;
 }
 .slide-container .carousel-inner .item {
   height: 230px;
@@ -840,11 +840,11 @@ header #jumbotron-text {
     transition: 0ms;
     margin: 5% 0px;
     height: 300px;
-    color: black;
   }
 }
 .slide-container .carousel-inner .item img {
   height: 300px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .slide-container .carousel-inner .item img {
@@ -856,7 +856,6 @@ header #jumbotron-text {
     transition: 0ms;
     margin: 5% 0px;
     height: 300px;
-    color: black;
   }
 }
 @media (max-width: 500px) {
