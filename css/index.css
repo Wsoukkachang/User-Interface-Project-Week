@@ -323,9 +323,9 @@ header #jumbotron-text {
     font-size: 50px;
     line-height: 60px;
     bottom: 210px;
-    left: 5%;
     width: 80%;
     margin: 0px 0px;
+    padding-left: 5%;
   }
 }
 .header-services {
@@ -531,6 +531,11 @@ header #jumbotron-text {
   margin: 0 10%;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .recent-projects-container .project-content {
+    margin: 0 5%;
+  }
 }
 .recent-projects-container .project-content h2 {
   font-weight: bold;
@@ -826,10 +831,18 @@ header #jumbotron-text {
   }
 }
 .slide-container {
-  width: 100vw;
+  width: 80%;
   padding-right: 0px;
   padding-left: 0px;
-  margin-top: 2.6%;
+  margin: 5% 10%;
+  height: 100%;
+  padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .slide-container {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 .slide-container .carousel-inner .item {
   height: 230px;
@@ -1021,8 +1034,8 @@ footer .footer-content .bottom-content {
   }
 }
 footer .footer-content .bottom-content .form {
-  width: 30vw;
-  margin-left: 5vw;
+  width: 25vw;
+  margin-left: 10vw;
   margin-right: 4vw;
 }
 @media (max-width: 500px) {
@@ -1065,7 +1078,7 @@ footer .footer-content .bottom-content .services-form input {
 }
 footer .footer-content .bottom-content h5 {
   font-weight: normal;
-  width: 30vw;
+  width: 28vw;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #FFFFFF;
@@ -1078,7 +1091,7 @@ footer .footer-content .bottom-content h5 {
 }
 footer .footer-content .bottom-content .privacy {
   font-size: 0.6rem;
-  width: 30vw;
+  width: 28vw;
 }
 @media (max-width: 500px) {
   footer .footer-content .bottom-content .privacy {
@@ -1087,7 +1100,7 @@ footer .footer-content .bottom-content .privacy {
   }
 }
 footer .footer-content .bottom-content .locations {
-  width: 19vw;
+  width: 20vw;
 }
 @media (max-width: 500px) {
   footer .footer-content .bottom-content .locations {
