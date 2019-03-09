@@ -36,17 +36,22 @@
     }
     
     a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
 
     &:hover {
-        color: #222222;
+        color: #222222 !important;
       }
     }
 
     img {
       margin: 2% 0;
       margin-right: 10%;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1
+      }
       
       @media @mobile {
         margin-right: 5%;
@@ -56,6 +61,11 @@
     .services-nav-button {
       margin: 2% 0;
       margin-right: 10%;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1
+      }
       
       @media @mobile {
         margin-right: 5%;
@@ -65,6 +75,11 @@
     .contact-nav-button {
       margin: 2% 0;
       margin-right: 10%;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1
+      }
       
       @media @mobile {
         margin-right: 5%;
