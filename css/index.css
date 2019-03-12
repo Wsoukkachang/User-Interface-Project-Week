@@ -466,8 +466,8 @@ header #jumbotron-text {
   }
 }
 .top-container .top-content .first-content {
-  width: 90vw;
-  margin: 0% 5%;
+  width: 80vw;
+  margin: 0% 10%;
   margin-bottom: 7%;
   display: flex;
   flex-direction: row;
@@ -477,7 +477,7 @@ header #jumbotron-text {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin: 0px 5%;
+    margin: 0px 10%;
     margin-bottom: 0%;
   }
 }
@@ -507,7 +507,7 @@ header #jumbotron-text {
   width: 90vw;
   display: flex;
   flex-direction: row;
-  margin: 0% 5%;
+  margin: 0% 10%;
 }
 @media (max-width: 500px) {
   .top-container .top-content .second-content {
@@ -717,6 +717,10 @@ header #jumbotron-text {
   background: #48a0bc;
   color: white;
 }
+.tabs-link .button .tabs-link-selected {
+  background: #48a0bc;
+  color: white;
+}
 .tabs-link #last-button {
   height: 30px;
   text-decoration: none;
@@ -772,6 +776,10 @@ header #jumbotron-text {
 }
 .tabs-link #last-button:hover {
   cursor: pointer;
+  background: #48a0bc;
+  color: white;
+}
+.tabs-link #last-button .tabs-link-selected {
   background: #48a0bc;
   color: white;
 }
