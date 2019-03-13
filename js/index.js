@@ -1,22 +1,18 @@
-// // select nav-bar image
+// select nav-bar image
 let menuButton = document.querySelector('.nav-bar img');
+
+// select nav-bar
+let menu = document.querySelector('.nav-bar');
 
 // click event for nav-bar image
 menuButton.addEventListener('click', () => {
    menu.classList.toggle('nav-bar-active');
 
-   // changes images of nav-bar image
+   // changes image of nav-bar image (hamburger to x, vice versa)
    menuButton.src.includes('img/nav-hamburger.png') ? menuButton.src = 'img/nav-hamburger-close.png' : menuButton.src = 'img/nav-hamburger.png';
 })
 
-let menu = document.querySelector('.nav-bar');
-
-// toggles menu open
-const toggleMenu = () => {
-    menu.classList.toggle('menu--open');
-}
-
-//tab class
+//services tab component
 class TabLink {
     constructor(element) {
         this.element = element;
@@ -32,6 +28,7 @@ class TabLink {
     select() {
         let links = document.querySelectorAll('.button');
 
+        // changes link selected
         links.forEach(link => link.classList.remove('tabs-link-selected'));
         this.element.classList.add('tabs-link-selected');
         this.tabItem.select();
@@ -47,6 +44,7 @@ class TabItem {
     select() {
         let items = document.querySelectorAll('.services-content');
 
+        // changes item selected
         items.forEach(item => item.classList.remove('tabs-item-selected'));
         this.element.classList.add('tabs-item-selected');
     }
