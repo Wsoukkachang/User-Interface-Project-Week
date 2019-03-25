@@ -1,0 +1,151 @@
+//footer
+footer {
+
+    p {
+      font-weight: normal;
+      font-size: 0.8rem;
+      line-height: 26px;
+      color: #FFFFFF;
+      width: 15vw;
+
+      @media @mobile {
+        width: 50vw;
+      }
+
+    }
+  
+    .footer-content {
+      background-color: #828282;
+      height: 30vh;
+      margin-top: 5%;
+      padding-top: 40px;
+      width: 100vw;
+
+      @media @mobile {
+        height: 82vh;
+    }
+  
+      .bottom-content {
+        display: flex;
+        flex-direction: row;
+        font-weight: normal;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+        }
+      
+        // form container to input e-mail address
+        .form {
+          width: 25vw;
+          margin-left: 10vw;
+          margin-right: 4vw;
+          
+          @media @mobile {
+              width: 90vw;
+              margin: 0 5vw;
+            }
+            
+            // input e-mail box (Enter email)
+            input {
+                width: 96%;
+                font-size: 1rem;
+                height: 4vh;
+                color: #D3D3D3;
+                margin-top: 8px;
+                border-radius: 5px;
+            }
+        }
+        
+        //services form
+        .services-form {
+            width: 30vw;
+            margin-left: 10vw;
+            margin-right: 4vw;
+            
+            @media @mobile {
+                width: 90vw;
+                margin: 0 5vw;
+            }
+
+        // input e-mail box (Enter email)
+        input {
+            width: 30vw;
+            font-size: 1rem;
+            height: 4vh;
+            color: #D3D3D3;
+            margin-top: 8px;
+            border-radius: 5px;
+
+            @media @mobile {
+                width: 89vw;
+            }
+        }
+    }
+  
+        h5 {
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: #FFFFFF;
+
+          @media @mobile {
+            font-size: 1.4rem;
+            width: 80vw;
+        }
+
+        }
+  
+        //privacy text (We'll never share your email with anyone else.)
+        .privacy {
+          font-size: 0.6rem;
+          width: 28vw;
+
+          @media @mobile {
+            font-size: 0.7rem;
+            width: 85vw;
+        }
+  
+        }
+  
+        .locations {
+          width: 20vw;
+
+          @media @mobile {
+              margin: 2% 5%;
+              font-size: 1rem;
+              width: 80vw;
+            }
+        }
+
+        // last location (california)
+        .locations-california {
+            width: 14vw;
+  
+            @media @mobile {
+                margin: 2% 5%;
+                font-size: 1rem;
+                width: 80vw;
+              }
+          }
+      }
+
+      // copyright text
+      .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.5vh;
+        margin: 0 auto;
+        width: 50vh;
+        font-size: 0.8rem;
+
+        @media @mobile {
+            justify-content: flex-start;
+            width: 80vw;
+            padding-left: 5%;
+            padding-top: 2vh;
+          }
+      }
+    }
+  }

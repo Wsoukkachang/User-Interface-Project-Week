@@ -1,0 +1,63 @@
+  //make buttons
+  .btn() {
+    height: 30px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    line-height: 3.5vh;
+    vertical-align: middle;
+    cursor: pointer;
+
+    @media @mobile {
+        width: 90vw;
+        height: 40px;
+        padding: 0px 0px;
+        line-height: 250%;
+      }
+    
+    & a {
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+    
+    & a:visited {
+        color: #FFFFFF;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+    &:hover {
+        background-color: darken(#FFFFFF, 10%);
+        color: white;
+    }
+  }
+  }
+  
+  .button {
+  .btn;
+  }
+
+  //center things
+  .center() {
+      display: flex;
+      align-content: center;
+      align-items: center;
+  }
+
+  .width-100 {
+    width: 100%;
+  }
+  
+  .flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }
+  

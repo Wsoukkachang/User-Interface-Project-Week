@@ -1,0 +1,214 @@
+//top container (Smith & Jones Architects and Futuristic Designs)
+.top-container {
+    margin: 5% auto;
+    display: flex;
+    
+    @media @mobile {
+        margin: 5% 0px;
+        margin-bottom: 10px;
+    }
+    
+    //top content (Smith & Jones Architects and Futuristic Designs content)
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        
+        @media @mobile {
+            margin: 0% 0%;
+        }
+        
+        h2 {
+            font-weight: bold;
+            font-size: 16px;
+            color: #222222;
+            margin-top: 15%;
+            margin-bottom: 7%;
+            
+            @media @mobile {
+                margin-top: 5%;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+        }
+        
+        // Smith & Jones Architects content
+        .first-content {
+            width: 80vw;
+            margin: 0% 10%;
+            margin-bottom: 7%;
+            display: flex;
+            flex-direction: row;
+            
+            @media @mobile {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                margin: 0px 10%;
+                margin-bottom: 0%;
+            }
+            
+            img {
+                width: 40vw;
+                
+                @media @mobile {
+                    width: 90vw;
+                }
+            }
+            
+            // text content (Smith & Jones Architects)
+            .text-container {
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right: 20px;
+                width: 40vw;
+
+                @media @mobile {
+                    width: 90vw;
+                    align-items: center;
+                    margin: 0px 5%;
+                    height: 28vh;
+                }
+            }
+        }
+        
+        // Futuristic Designs content
+        .second-content {
+            width: 90vw;
+            display: flex;
+            flex-direction: row;
+            margin: 0% 10%;
+
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px 5%;
+            }
+            
+            img {
+                width: 40vw;
+                
+                @media @mobile {
+                    width: 90vw;
+                }
+            }
+            
+            // text content (Futuristic Designs)
+            .text-container {
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 20px;
+                width: 40vw;
+                
+                @media @mobile {
+                    width: 90vw;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}  
+
+
+//recent-projects (The Villas, Outskirts, The Blocks)
+.recent-projects-container {
+    
+    .project-content {
+        display: flex;
+        width: 90vw;
+        margin: 0 10%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media @mobile {
+            margin: 0 5%;
+        }
+        
+        h2 {
+            font-weight: bold;
+            font-size: 16px;
+            color: #222222;
+            
+            @media @mobile {
+                margin-top: 5%;
+                margin-bottom: 0%;
+                font-size: 30px;
+            }
+        }
+
+        // grey squares with text over pictures (The Villas, The Blocks)
+        h3 {
+            position: relative;
+            letter-spacing: 2px;
+            z-index: 1;
+            font-size: 18px;
+            top: 185px;
+            left: 59.8%;
+            background-color: #D8D8D8;
+            height: 4.5vh;
+            width: 28.2vw;
+            padding-top: 22px;
+            text-align: center;
+
+            @media @mobile {
+                letter-spacing: 8px;
+                height: 7vh;
+                width: 76vw;
+                top: 26vh;
+                left: 4.5vw;
+                font-size: 1.6rem;
+            }
+        }
+
+        // grey squares with text over pictures (Outskirts)
+        h4 {
+            position: relative;
+            letter-spacing: 2px;
+            z-index: 1;
+            font-size: 18px;
+            top: 185px;
+            background-color: #D8D8D8;
+            height: 4.5vh;
+            width: 25vw;
+            padding-top: 22px;
+            text-align: center;
+
+            @media @mobile {
+                letter-spacing: 8px;
+                height: 7vh;
+                width: 76vw;
+                top: 26vh;
+                left: 4.5vw;
+                font-size: 1.6rem;
+            }
+        }
+        
+        img {
+            height: 150px;
+            width: 82vw;
+
+            @media @mobile {
+                width: 84vw;
+            }
+
+        }  
+    }
+    
+    // recent-projects p's
+    .centered-ps {
+        flex-direction: column;
+        .center();
+        width: 38vw;
+        margin-top: 80px;
+        margin: 10vh auto 1vh auto;
+
+        @media @mobile {
+            margin-top: 12vh;
+            width: 68vw;
+            margin: 10vh 10% 0 10%;
+        }
+    }
+}
+
